@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>fortrabbit</title>
-	<meta name="description" content="Custom Apache webserver error pages from fortrabbit.">
-	<link rel="stylesheet" href="http://s3-eu-west-1.amazonaws.com/fortrabbit-static/css/fortrabbit.css">
-	<script src="http://s3-eu-west-1.amazonaws.com/fortrabbit-static/js/fortrabbit.js"></script>
-	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-	<style type="text/css">
-
-		#github-ribbon {
-			height: 200px;
-			overflow: hidden;
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: 200px;
-			z-index: 100;
-		}
-		#github-ribbon a {
-			-webkit-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			transform: rotate(45deg);
-			background: #ccc;
-			color: #eee;
-			font-weight: bold;
-			height: 60px;
-			line-height: 60px;
-			position: absolute;
-			right: -90px;
-			text-align: center;
-			top: 30px;
-			width: 300px;
-		}
-		#github-ribbon a:hover {
-			color: #fff;
-		}
-	</style>
-
+    <meta charset="utf-8">
+    <title>VG web things</title>
+    <meta name="description" content="Custom webserver error pages from VG web things.">
+    <link rel="stylesheet" href="http://s3-eu-west-1.amazonaws.com/fortrabbit-static/css/fortrabbit.css">
+    <script src="http://s3-eu-west-1.amazonaws.com/fortrabbit-static/js/fortrabbit.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style type="text/css">
+        body.usernavhidden{
+            background-color:#e1e1e1;
+        }
+        .content{
+            background-color:#e1e1e1;
+        }
+        h1, h2, h3, h4, h5{
+            border-bottom:4px solid #0098ed;
+        }
+        article ul li:before{
+            color:#0098ed;
+        }
+        footer{
+            border-top:8px double #0098ed;
+        }
+        p a, li a, dl a, h1 a, h2 a, h3 a, h4 a, td a, blockquote a{
+            box-shadow:0 1px #0098ed;
+        }
+        p a:hover, li a:hover, dl a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, td a:hover, blockquote a:hover, p a:visited:hover, li a:visited:hover, dl a:visited:hover, h1 a:visited:hover, h2 a:visited:hover, h3 a:visited:hover, h4 a:visited:hover, td a:visited:hover, blockquote a:visited:hover{
+            box-shadow:0 2px #0098ed;
+        }
+        article p, article dl, article ol, article ul, article hr{
+            max-width:none;
+        }
+        #github-ribbon{
+            height:200px;
+            overflow:hidden;
+            position:absolute;
+            right:0;
+            top:0;
+            width:200px;
+            z-index:100;
+        }
+        #github-ribbon a{
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            transform:rotate(45deg);
+            background:#ccc;
+            color:#eee;
+            font-weight:bold;
+            height:60px;
+            line-height:60px;
+            position:absolute;
+            right:-90px;
+            text-align:center;
+            top:30px;
+            width:300px;
+        }
+        #github-ribbon a:hover{
+            color:#fff;
+        }
+    </style>
 </head>
-
 <body class="usernavhidden">
-	<div id="github-ribbon"><a id="github-ribbon" href="https://github.com/fortrabbit/Custom-HTTP-Error-Pages">GitHub</a></div>
-	<div id="main" role="main" class="content">
-		<main role="main" class="flexcenter mainframe">
-			<article class="wrapper">
-			<h1>fortrabbit<br><span class="thinfont">custom error pages</span></h1>
-			<p><strong>Things will go wrong.</strong> We at <a href="http://fortrabbit.com">fortrabbit</a> like meaningful error messages. Here are our custom error pages for our PHP hosting platform. The syntax is hopefully valid HTML5. </p>
-<p>Feel free to rip, mix &amp; burn.</p>
-<p>The pages have been built using Metalsmith.io static generator, have a look at the <a href="https://github.com/fortrabbit/Custom-HTTP-Error-Pages/tree/master">source</a>.</p>
+<!--<div id="github-ribbon"><a id="github-ribbon" href="https://github.com/fortrabbit/Custom-HTTP-Error-Pages">GitHub</a></div>-->
+<div id="main" role="main" class="content">
+    <main role="main" class="flexcenter mainframe">
+        <article class="wrapper">
+            <h1>VG web things<br><span class="thinfont">custom error pages</span></h1>
 
-			<ul>
-			<li><a href="401.html">Error 401</a></li>
-			<li><a href="403.html">Error 403</a></li>
-			<li><a href="404.html">Error 404</a></li>
-			<li><a href="410.html">Error 410</a></li>
-			<li><a href="500.html">Error 500</a></li>
-			<li><a href="503.html">Error 503</a></li>
-			<li><a href="505.html">Error 505</a></li>
-			<li><a href="it-nearly-works.html">It nearly works</a></li>
-			<li><a href="it-really-works.html">It really works</a></li>
-			<li><a href="service-offline.html">Temporarily offline</a></li>
-			</ul>
-			</article>
-		</main>
-		<footer>
-			PHPower to the PHPeople<br>
-			<a href="http://fortrabbit.com" class="fortrabbit" title="best PHP hosting ever">VG web things</a>
-		</footer>
-	</div>
+            <p><strong>Things will go wrong.</strong> We at <a href="http://www.vgwebthings.com">VG web things</a> like meaningful error messages.<br>Here are our custom error pages.<br>The syntax is hopefully valid HTML5. </p>
+            <ul>
+                <li>
+                    <a href="401.html">Error 401</a>
+                </li>
+                <li>
+                    <a href="403.html">Error 403</a>
+                </li>
+                <li>
+                    <a href="404.html">Error 404</a>
+                </li>
+                <li>
+                    <a href="410.html">Error 410</a>
+                </li>
+                <li>
+                    <a href="500.html">Error 500</a>
+                </li>
+                <li>
+                    <a href="503.html">Error 503</a>
+                </li>
+                <li>
+                    <a href="505.html">Error 505</a>
+                </li>
+                <li>
+                    <a href="it-nearly-works.html">It nearly works</a>
+                </li>
+                <li>
+                    <a href="it-really-works.html">It really works</a>
+                </li>
+                <li>
+                    <a href="service-offline.html">Temporarily offline</a>
+                </li>
+            </ul>
+        </article>
+    </main>
+</div>
 </body>
 </html>
-<!-- fortrabbit – worldwide hideout -->
